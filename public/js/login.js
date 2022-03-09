@@ -21,6 +21,7 @@ async function handleLogin(event) {
         console.log('your logged in')
       } else {
         alert('Failed to log in');
+        grecaptcha.reset()
       }
     }
   }
